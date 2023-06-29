@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- LINK -->
+    <link rel="me" href="#">
+    <link rel="canonical" href="#">
+    <link rel="icon" type="image/png" href="#" sizes="48x48">
+    <!-- PERFORMANCE -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preload" as="style" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- TITLE -->
+    <title>ProfileTree</title>
+  </head>
+  <body>
+    <header role="banner" class="ui-section-header">
+      <div class="ui-layout-container">
+        <div class="ui-section-header__layout ui-layout-flex">
+          
+          <!-- LOGO -->
+          <div class="logo-menu">
+          <!-- ICON -->
+          <img class="menu-icon light-icon" src="https://i.ibb.co/F8h2rNP/menu.png" alt="Icon Name">
+          <img class="menu-icon dark-icon" src="https://i.ibb.co/2sLRYVt/menu-1.png" alt="Icon Name">
+          <a href="#" role="link" aria-label="#" class="ui-section-header--logo">
+          <img src="https://profiletree.com/wp-content/uploads/2023/05/Profiletree-Logo.png" width="204px" height="42" alt="logo">
+          </a>
+          <!-- HAMBURGER -->
+          <input type="checkbox" id="ui-section-header--menu-id">
+          <label for="ui-section-header--menu-id" class="ui-section-header--menu-icon"></label>
+          <!-- MENU -->
+          <nav role="navigation" class="ui-section-header--nav ui-layout-flex">
+            <a href="#our_services" role="link" aria-label="#" class="ui-section-header--nav-link">Services</a>
+            <a href="#our_projects" role="link" aria-label="#" class="ui-section-header--nav-link">Projects</a>
+            <a href="#" role="link" aria-label="#" class="ui-section-header--nav-link">Blog</a>
+            <a href="#about_us" role="link" aria-label="#" class="ui-section-header--nav-link">About</a>
+            <a href="#" role="link" aria-label="#" class="ui-section-header--nav-link">Contact</a>
+          </nav>
+        </div>
+        <div class="logo-menu">
+          <button id="light-dark" class="light-dark" aria-label="Switch between light/dark mode">
+            <svg class="light-icon" width="26" height="26" viewBox="0 0 26 26" fill="none">
+              <path d="M14 1C14 0.447715 13.5523 0 13 0C12.4477 0 12 0.447715 12 1H14ZM12 3.18182C12 3.7341 12.4477 4.18182 13 4.18182C13.5523 4.18182 14 3.7341 14 3.18182H12ZM14 22.8182C14 22.2659 13.5523 21.8182 13 21.8182C12.4477 21.8182 12 22.2659 12 22.8182H14ZM12 25C12 25.5523 12.4477 26 13 26C13.5523 26 14 25.5523 14 25H12ZM5.21954 3.80559C4.82901 3.41506 4.19585 3.41506 3.80532 3.80559C3.4148 4.19611 3.4148 4.82928 3.80532 5.2198L5.21954 3.80559ZM5.35441 6.76889C5.74494 7.15942 6.3781 7.15942 6.76863 6.76889C7.15915 6.37837 7.15915 5.7452 6.76863 5.35468L5.35441 6.76889ZM20.6457 19.2311C20.2551 18.8405 19.622 18.8405 19.2315 19.2311C18.8409 19.6216 18.8409 20.2547 19.2315 20.6453L20.6457 19.2311ZM20.7806 22.1944C21.1711 22.5849 21.8042 22.5849 22.1948 22.1944C22.5853 21.8038 22.5853 21.1707 22.1948 20.7802L20.7806 22.1944ZM1 12C0.447715 12 0 12.4477 0 13C0 13.5523 0.447715 14 1 14V12ZM3.18182 14C3.7341 14 4.18182 13.5523 4.18182 13C4.18182 12.4477 3.7341 12 3.18182 12V14ZM22.8182 12C22.2659 12 21.8182 12.4477 21.8182 13C21.8182 13.5523 22.2659 14 22.8182 14V12ZM25 14C25.5523 14 26 13.5523 26 13C26 12.4477 25.5523 12 25 12V14ZM3.80532 20.7802C3.4148 21.1707 3.4148 21.8038 3.80532 22.1944C4.19585 22.5849 4.82901 22.5849 5.21954 22.1944L3.80532 20.7802ZM6.76863 20.6453C7.15915 20.2547 7.15915 19.6216 6.76863 19.2311C6.3781 18.8405 5.74494 18.8405 5.35441 19.2311L6.76863 20.6453ZM19.2315 5.35468C18.8409 5.7452 18.8409 6.37837 19.2315 6.76889C19.622 7.15942 20.2551 7.15942 20.6457 6.76889L19.2315 5.35468ZM22.1948 5.2198C22.5853 4.82928 22.5853 4.19611 22.1948 3.80559C21.8042 3.41506 21.1711 3.41506 20.7806 3.80559L22.1948 5.2198ZM17.4545 13C17.4545 15.4602 15.4602 17.4545 13 17.4545V19.4545C16.5647 19.4545 19.4545 16.5647 19.4545 13H17.4545ZM13 17.4545C10.5398 17.4545 8.54545 15.4602 8.54545 13H6.54545C6.54545 16.5647 9.43525 19.4545 13 19.4545V17.4545ZM8.54545 13C8.54545 10.5398 10.5398 8.54545 13 8.54545V6.54545C9.43525 6.54545 6.54545 9.43525 6.54545 13H8.54545ZM13 8.54545C15.4602 8.54545 17.4545 10.5398 17.4545 13H19.4545C19.4545 9.43525 16.5647 6.54545 13 6.54545V8.54545ZM12 1V3.18182H14V1H12ZM12 22.8182V25H14V22.8182H12ZM3.80532 5.2198L5.35441 6.76889L6.76863 5.35468L5.21954 3.80559L3.80532 5.2198ZM19.2315 20.6453L20.7806 22.1944L22.1948 20.7802L20.6457 19.2311L19.2315 20.6453ZM1 14H3.18182V12H1V14ZM22.8182 14H25V12H22.8182V14ZM5.21954 22.1944L6.76863 20.6453L5.35441 19.2311L3.80532 20.7802L5.21954 22.1944ZM20.6457 6.76889L22.1948 5.2198L20.7806 3.80559L19.2315 5.35468L20.6457 6.76889Z" fill="#262629"></path>
+              </svg>
+              <i class="fas fa-chevron-down light-icon" style="margin-left:5px; color: #000;"></i>
+              <svg class="dark-icon" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                <path d="M25 14.0811C24.7898 16.3555 23.9362 18.523 22.5391 20.3301C21.142 22.1371 19.2591 23.5088 17.1109 24.2848C14.9626 25.0608 12.6378 25.2089 10.4084 24.7118C8.17901 24.2147 6.13731 23.0929 4.52219 21.4778C2.90708 19.8627 1.78534 17.821 1.28824 15.5916C0.791145 13.3622 0.939246 11.0374 1.71522 8.88913C2.49119 6.74086 3.86293 4.85801 5.66994 3.46089C7.47695 2.06378 9.64449 1.21019 11.9189 1C10.5873 2.80151 9.94653 5.02113 10.1131 7.25516C10.2797 9.48918 11.2426 11.5892 12.8267 13.1733C14.4108 14.7574 16.5108 15.7203 18.7448 15.8869C20.9789 16.0535 23.1985 15.4127 25 14.0811Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <i class="fas fa-chevron-down dark-icon" style="margin-left:5px; color: #fff;"></i>
+          </button>
+          <button class="btnContact">Get in Touch</button>
+        </div>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      <section class="ui-section-hero">
+        <div class="ui-layout-container">
+          <div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
+            <!-- INTRO -->
+            <div>
+              <p class="ui-text-intro">Digital Marketing Agency driving Global Sales</p>
+              <h1>We deliver <span class="span-green">creative</span> websites and <span class="span-green">digital</span> services for your brand.</h1>
+            </div>
+            <p class="paragraph-intro">We are an award-winning content marketing agency focused on generating leads and sales for our clients. <br><br>We do this through incredibly optimised websites with sleek web design and engaging digital content - written, voice or video.</p>
+          </div>
+        </div>
+      </section>
+      <!-- VIDEO -->
+      <section id="video" class="ui-section-customer dark-mode-light">
+        <div class="video-wrapper">
+          <video src="path/to/your/video.mp4" poster="https://i.ibb.co/Rj1V36W/91c259d0f31388b3cb3e38f67e42c7e2.jpg"  width="100%" controls></video>
+          <div class="play-button">
+            <span class="play-icon"></span>
+            <span class="play-text">Play Video</span>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section id="about_us" class="ui-section-hero dark-mode-light">
+        <div class="ui-layout-container">
+          <div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
+            <div>
+              <p class="ui-text-intro">Who We Are</p>
+              <h1>Award-winning content marketing agency</h1>
+              <button class="btnContact">Our Story</button>
+            </div>
+            <p class="paragraph-intro">We’re more than a digital agency. Our marketing services help companies identify and implement strategies that deliver tangible business benefits and a strong ROI. We’ve even grown branded content from a mere start-up idea to over 1.6 million monthly visits. It’s what we do.</p>
+          </div>
+        </div>
+      </section>
+      <!-- OUR SERVICES -->
+      <section id="our_services" class="ui-section-testimonial dark-mode-light">
+        <div class="ui-layout-container">
+          <div class="ui-section-faq__layout ui-layout-grid ui-layout-grid-3">
+            <div>
+              <img class="list-item-svg" src="assets/images/Web Design.svg" alt="icon">
+              <h4 class="ui-component-list--item">Web Design</h4>
+              <p>We design stunning, user focused websites that present your brand beautifully and convert visitors into customers.</p>
+              <div class="find-out">
+                <a><p class="ui-list-link">Find Out More</p></a>
+                <i class="fas fa-arrow-right" style="margin-left: 10px; color: #32bd77;"></i>
+              </div>
+            </div>
+            <div>
+              <img class="list-item-svg" src="assets/images/Web-dev-icon.svg" alt="icon">
+              <h4 class="ui-component-list--item">Web Development</h4>
+              <p>We can help you create a plan for your marketing, helping you get the highest impact and best return from your budget.</p>
+              <div class="find-out">
+                <a><p class="ui-list-link">Find Out More</p></a>
+                <i class="fas fa-arrow-right" style="margin-left: 10px; color: #32bd77;"></i>
+              </div>              
+            </div>
+            <div>
+              <img class="list-item-svg" src="assets/images/Yellow-support-icon.svg" alt="icon">
+              <h4 class="ui-component-list--item">Digital Support</h4>
+              <p>We produce highly optimised written and visual content to help you educate and engage with your customers.</p>
+              <div class="find-out">
+                <a><p class="ui-list-link">Find Out More</p></a>
+                <i class="fas fa-arrow-right" style="margin-left: 10px; color: #32bd77;"></i>
+              </div>
+            </div>
+            <div>
+              <img class="list-item-svg" src="assets/images/Blue-Digital-Marketing-Icon.svg" alt="icon">
+              <h4 class="ui-component-list--item">Digital Marketing</h4>
+              <p>We can help you create a plan for your marketing, helping you get the highest impact and best return from your budget.</p>
+              <div class="find-out">
+                <a><p class="ui-list-link">Find Out More</p></a>
+                <i class="fas fa-arrow-right" style="margin-left: 10px; color: #32bd77;"></i>
+              </div>
+            </div>
+            <div>
+              <img class="list-item-svg" src="assets/images/Orange-content-marketing-Icon.svg" alt="icon">
+              <h4 class="ui-component-list--item">Content Marketing</h4>
+              <p>We design stunning, user focused websites that present your brand beautifully and convert visitors into customers.</p>
+              <div class="find-out">
+                <a><p class="ui-list-link">Find Out More</p></a>
+                <i class="fas fa-arrow-right" style="margin-left: 10px; color: #32bd77;"></i>
+              </div>
+            </div>
+            <div>
+              <img class="list-item-svg" src="assets/images/Purple-PPC-SEO-Icon.svg" alt="icon">
+              <h4 class="ui-component-list--item">SEO/PPC</h4>
+              <p>We produce highly optimised written and visual content to help you educate and engage with your customers.</p>
+              <div class="find-out">
+                <a><p class="ui-list-link">Find Out More</p></a>
+                <i class="fas fa-arrow-right" style="margin-left: 10px; color: #32bd77;"></i>
+              </div>
+            </div>
+      </section>
+      <!-- OUR PROJECTS -->
+      <section id="our_projects" class="ui-section-hero">
+        <div class="ui-layout-container">
+          <div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
+            <div>
+              <p class="ui-text-intro">Our Projects</p>
+              <h1>Experts in optimisation, conversion, ecommerce or generating online sales</h1>
+              <button class="btnContact">All Case Studies</button>
+            </div>
+            <p class="paragraph-intro-project">At ProfileTree, we believe in the value of digital strategy. Through consultative training and a comprehensive audit of your online business, we develop bespoke strategies that inform, engage and inspire. Our websites aren’t just visually beautiful. They deliver concrete business results as well. <br><br>Our growing client portfolio features brands from across Northern Ireland and beyond, reaching further afield into Europe and the United States. From those initial stages of design and development through to launch and maintenance, we bring your branded messages to the audiences that matter most.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- Photo Grid -->
+        <section id="photo-gallery" class="container-gallery">
+          <article class="container__item">
+            <div class="image-wrapper">
+              <img src="assets/images/Frame 112.png" alt="Fearless leader" width="800" height="534" />
+              <div class="image-caption">
+                <h3 class="image-title">Kix vaping</h3>
+                <p class="image-description"><strong>Custom Woocommerce Website</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </article>
+          <article class="container__item">
+            <div class="image-wrapper">
+              <img src="assets/images/Frame 112 (1).png" alt="Fearless leader" width="800" height="534" />
+              <div class="image-caption">
+                <h3 class="image-title">belfast artisan gin</h3>
+                <p class="image-description"><strong>Custom Woocommerce Website</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </article>
+          <article class="container__item">
+            <div class="image-wrapper">
+              <img src="assets/images/Frame 112 (2).png" alt="Fearless leader" width="800" height="534" />
+              <div class="image-caption">
+                <h3 class="image-title">custom Shopify website</h3>
+                <p class="image-description"><strong>Skin HQ</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </article>
+          <article class="container__item">
+            <div class="image-wrapper">
+              <img src="assets/images/Frame 112 (3).png" alt="Fearless leader" width="800" height="534" />
+              <div class="image-caption">
+                <h3 class="image-title">Digital marketing growth project</h3>
+                <p class="image-description"><strong>Further.Space</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </article>
+          <article class="container__item">
+            <div class="image-wrapper">
+              <img src="assets/images/Frame 112 (4).png" alt="Fearless leader" width="800" height="534" />
+              <div class="image-caption">
+                <h3 class="image-title">Digital marketing growth project</h3>
+                <p class="image-description"><strong>Tourism NI</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </article>
+        </section>
+        
+      <!-- LOGOS -->
+       <section class="ui-section-logo dark-mode-light">
+        <div class="ui-layout-container">
+          <div class="">
+            <div class="ui-layout-flex">
+            <img src="assets/images/Frame 119.png" alt="#" class="ui-section-customer--logo">
+            <img src="assets/images/Frame 120.png" alt="#" class="ui-section-customer--logo">
+            <img src="assets/images/Frame 121.png" alt="#" class="ui-section-customer--logo">
+            <img src="assets/images/Frame 122.png" alt="#" class="ui-section-customer--logo">
+          </div>
+            <div class="ui-layout-flex">
+            <img src="assets/images/Frame 119 (1).png" alt="#" class="ui-section-customer--logo">
+            <img src="assets/images/Frame 120 (1).png" alt="#" class="ui-section-customer--logo">
+            <img src="assets/images/Frame 121 (1).png" alt="#" class="ui-section-customer--logo">
+            <img src="assets/images/Frame 122 (1).png" alt="#" class="ui-section-customer--logo">
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- SHOPIFY & WORDPRESS -->
+      <section class="ui-section-hero">
+        <div class="ui-layout-container-image">
+          <div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2-image">
+            <div>
+              <p class="ui-text-intro">shopify & wordpress</p>
+              <h1>Specialists in ecommerce, seo, security and performance</h1>
+              <p class="paragraph-intro-project">A new website is a major investment for any organisation. It’s important to have confidence that you’ll reap the rewards of this. As such, the goal of any credible design agency is to improve profitability by increasing revenues and reducing operating costs. Modern websites can achieve this in a number of ways. This includes attracting more users, increasing navigability, simplifying your checkout process and capturing leads for email marketing.
+
+                <br>However, every business is different. Because of this, ProfileTree put your unique goals and needs at the heart of every development project.</p>
+                <div class="find-out">
+                  <a><p class="ui-list-link">Find Out More</p></a>
+                  <i class="fas fa-arrow-right" style="margin-left: 10px; color: #32bd77;"></i>
+                </div>
+            </div>
+            <img src="assets/images/Frame 128.png">
+          </div>
+        </div>
+      </section>
+      <section class="ui-section-testimonial dark-mode-light">
+        <div class="ui-layout-container">
+          <h1><span class="span-green">Ready to dive in?</span>
+            <br>Start your project today.</h1>
+          <button class="btnContact">Start Project</button>
+        </div>
+      </section>
+      <!-- DIGITAL MARKETING AGENCY -->
+      <section class="ui-section-hero">
+        <div class="ui-layout-container-image">
+          <div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2-image">
+            <img src="assets/images/Frame 129.png">
+            <div>
+              <p class="ui-text-intro">Digital Marketing Agency</p>
+              <h1>Driving successful campaigns through digital strategy</h1>
+              <p class="paragraph-intro-project">Selecting the right digital marketing agency for any business or brand needs careful consideration and due diligence. A marketing agency needs to fully understand its clients’ business, goals and objectives. The should also be experts across all areas of digital marketing including social media marketing, SEO, content marketing and video marketing, right through to paid and influencer marketing. Whether your business is B2B or B2C and whether it requires an e-commerce website, creative video production or an engaging email campaign, it’s essential that the agency you choose is at the top of its sector. </p>
+                <div class="find-out">
+                  <a><p class="ui-list-link">Find Out More</p></a>
+                  <i class="fas fa-arrow-right" style="margin-left: 10px; color: #32bd77;"></i>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- DIGITAL NEWS & INSIGHTS -->
+      <section class="ui-section-hero dark-mode-dark">
+        <div class="ui-layout-container">
+          <div id="digital-insights" class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
+            <div>
+              <p class="ui-text-intro">Digital News & Insights</p>
+              <h1>Our expert business blog offers a world of digital how-to</h1>
+            </div>
+            <button class="top-space btnContact">View All Posts</button>
+          </div>
+        </div>
+      </section>
+      <section id="digital-news" class="ui-section-testimonial dark-mode-dark">
+        <div class="ui-layout-container">
+          <div class="ui-section-faq__layout ui-layout-grid ui-layout-grid-3">
+            <div>
+              <img class="list-item-svg" src="assets/images/Case Study Card.png" alt="icon">
+              <p class="ui-text-intro">blogging & vlogging</p>
+              <h4 class="ui-component-list--item">Covid-19 Marketing Advice from ProfileTree</h4>
+              <p>The Covid-19 pandemic is a bit weird for everyone. We’ve tried to do our bit with some free marketing advice to suit the times – courtesy of the pros at ProfileTree...</p>
+              <div class="find-out">
+                <a><p class="ui-list-link">Read More</p></a>
+                <i class="fas fa-arrow-right" style="margin-left: 10px; color: #32bd77;"></i>
+              </div>
+            </div>
+            <div>
+              <img class="list-item-svg" src="assets/images/Case Study Card (3).png" alt="icon">
+              <p class="ui-text-intro">content writing and marketing</p>
+              <h4 class="ui-component-list--item">Using Animation for Advertising </h4>
+              <p>Have you considered using animation for marketing? Check out our total guide to including animation in your wider marketing strategy...</p>
+              <div class="find-out">
+                <a><p class="ui-list-link">Read More</p></a>
+                <i class="fas fa-arrow-right" style="margin-left: 10px; color: #32bd77;"></i>
+              </div>              
+            </div>
+            <div>
+              <img class="list-item-svg" src="assets/images/Case Study Card (2).png" alt="icon">
+              <p class="ui-text-intro">business strategy</p>
+              <h4 class="ui-component-list--item">Tourism Marketing: Your Guide to Success Within The Tourism Industry </h4>
+              <p>Across different industries, most businesses acknowledge the importance of marketing. Yet, every industry has its challenges and doubts. Marketing strategies need to...</p>
+              <div class="find-out">
+                <a><p class="ui-list-link">Read More</p></a>
+                <i class="fas fa-arrow-right" style="margin-left: 10px; color: #32bd77;"></i>
+              </div>
+            </div>
+      </section>
+      <section class="ui-section-close dark-mode-light">
+        <div class="ui-layout-container">
+          <div class="ui-section-close__layout ui-layout-flex">
+            <div>
+              <h2>Join Our Mailing List</h2>
+              <p class="ui-text-newsletter">Grow your business by getting expert web, marketing and sales tips straight to your inbox. Subscribe to our newsletter.</p>
+            </div>
+            <!-- CTA -->
+            <div class="ui-layout-flex">
+              <input type="email" name="email" placeholder="Enter your email address" class="newsletter-input dark-mode-dark">
+              <button class="btnContact" type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo" class="ui-section-footer dark-mode-light ">
+      <!-- FOOTER START -->
+<div class="footer dark-mode-light">
+  <div class="contain">
+  <div class="col">
+    <span class="span-green">BELFAST</span>
+    <ul>
+      <div>
+      <li>Innovation Factory,
+        385 Springfield Rd,
+        Belfast, BT12 7DG</li>
+        <li>
+        </div>
+        <div>
+          <li>
+          <div class="find-out">
+            <a><p class="ui-list-link">Maps & Directions</p></a>
+            <i class="fas fa-arrow-right" style="margin-top:4px; margin-left: 10px; color: #32bd77;"></i>
+          </div>
+        </li>
+      </div>
+    </ul>
+  </div>
+  <div class="col">
+    <span class="span-green">MONAGHAN</span>
+    <ul>
+      <div>
+      <li>Clonkirk, Clones,
+        Co.Monaghan,
+        Ireland</li>
+      </div>
+      <div class="padding-30">
+      <li>
+        <div class="find-out">
+          <a><p class="ui-list-link">Maps & Directions</p></a>
+          <i class="fas fa-arrow-right" style="margin-top:4px; margin-left: 10px; color: #32bd77;"></i>
+        </div>
+      </li>
+    </div>
+    </ul>
+  </div>
+  <div class="col">
+    <span class="span-green">KEY PAGES</span>
+    <ul>
+      <li>Video Production</li>
+      <li>WordPress Hosting</li>
+      <li>SEO Services</li>
+      <li>Digital Agency</li>
+    </ul>
+  </div>
+  <div class="col">
+    <span class="span-green">SERVICES</span>
+    <ul>
+      <li>Web Design</li>
+      <li>Web Development</li>
+      <li>Digital Marketing</li>
+      <li>Content Marketing</li>
+    </ul>
+  </div>
+  <div class="col">
+    <span class="span-green">OUR BRAND</span>
+    <ul>
+      <li>Learning Mole</li>
+      <li>Connolly Cove</li>
+      <li>Amazing Food & Drink</li>
+      <li>Amazing Cars & Drives</li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!-- END OF FOOTER -->
+      <div class="ui-layout-container">
+        <div class="ui-section-footer__layout ui-layout-flex">
+          <!-- COPYRIGHT -->
+          <p class="ui-section-footer--copyright ui-text-note"><small>© 2022 ProfileTree. All Rights Reserved</small></p>
+          <!-- MENU -->
+          <a class="no-underline" href="#" role="link" aria-label="#">
+            <p>Careers</p>
+          </a>
+          <a class="no-underline" href="#" role="link" aria-label="#">
+          <p>Terms & Conditions</p>
+          </a>
+          <a class="no-underline" href="#" role="link" aria-label="#">
+            <p>Privacy Policy</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
