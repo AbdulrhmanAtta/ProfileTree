@@ -294,9 +294,6 @@ header .btnContact {
   font-size: inherit;
   }
 
-  #menu_light, #menu_dark {
-    display: none;
-  }
 
 .ui-section-header--menu-icon {
   left: 13px;
@@ -885,10 +882,18 @@ video::-webkit-media-controls-time-remaining-display {
     .footer .col ul li {
       font-size: 13px;
     }
+    
+  #menu_light, #menu_dark {
+    display: none;
+  }
 }
 @media only screen and (max-width: 340px) {
   .footer .col {
     width: 100%;
+  }
+  
+  #menu_light, #menu_dark {
+    display: none;
   }
 }
 
@@ -1174,6 +1179,8 @@ video::-webkit-media-controls-time-remaining-display {
     font-size: var(--ui-typography-p);
     padding: 0;
   }
+
+
 
   /*------------------------------------------------------------
   |
